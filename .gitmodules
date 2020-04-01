@@ -1,0 +1,3 @@
+[submodule "avr/PiSupply/lib/micropin"]
+	path = avr/PiSupply/lib/micropin
+	url = git@github.com:Jojo-1000/micropin.git
