@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+LIBS:PiSupply-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L PiSupply-rescue:MP1584 U6
+U 1 1 59A1D86C
+P 2350 1350
+F 0 "U6" H 2350 1550 60  0000 C CNN
+F 1 "MP1584" H 2350 1450 60  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm" H 2350 1350 60  0000 C CNN
+F 3 "" H 2350 1350 60  0001 C CNN
+	1    2350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:D_Schottky_ALT D8
+U 1 1 59A1D873
+P 3400 1300
+F 0 "D8" H 3400 1400 50  0000 C CNN
+F 1 "SS34 DO214AC 1N5822" H 3400 1200 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 3400 1300 50  0000 C CNN
+F 3 "" H 3400 1300 50  0001 C CNN
+	1    3400 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PiSupply-rescue:C_Small C14
+U 1 1 59A1D87A
+P 4000 1300
+F 0 "C14" H 4010 1370 50  0000 L CNN
+F 1 "22µF" H 4010 1220 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4000 1300 50  0000 C CNN
+F 3 "" H 4000 1300 50  0001 C CNN
+	1    4000 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:R_Small R16
+U 1 1 59A1D881
+P 3400 1600
+F 0 "R16" H 3430 1620 50  0000 L CNN
+F 1 "221k" H 3430 1560 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3400 1600 50  0000 C CNN
+F 3 "" H 3400 1600 50  0001 C CNN
+	1    3400 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L PiSupply-rescue:C_Small C11
+U 1 1 59A1D888
+P 1050 1650
+F 0 "C11" H 1060 1720 50  0000 L CNN
+F 1 "10µF" H 1060 1570 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1050 1650 50  0000 C CNN
+F 3 "" H 1050 1650 50  0001 C CNN
+	1    1050 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:C_Small C13
+U 1 1 59A1D88F
+P 3000 1400
+F 0 "C13" H 3010 1470 50  0000 L CNN
+F 1 "100nF" H 3010 1320 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3000 1400 50  0000 C CNN
+F 3 "" H 3000 1400 50  0001 C CNN
+	1    3000 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PiSupply-rescue:R_Small R15
+U 1 1 59A1D896
+P 3150 1850
+F 0 "R15" H 3180 1870 50  0000 L CNN
+F 1 "40.2k" H 3180 1810 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 3150 1850 50  0000 C CNN
+F 3 "" H 3150 1850 50  0001 C CNN
+	1    3150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:C_Small C12
+U 1 1 59A1D89D
+P 2850 1850
+F 0 "C12" H 2860 1920 50  0000 L CNN
+F 1 "150pF" H 2860 1770 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2850 1850 50  0000 C CNN
+F 3 "" H 2850 1850 50  0001 C CNN
+	1    2850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:R_Small R14
+U 1 1 59A1D8A4
+P 2850 2100
+F 0 "R14" H 2880 2120 50  0000 L CNN
+F 1 "100k" H 2880 2060 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2850 2100 50  0000 C CNN
+F 3 "" H 2850 2100 50  0001 C CNN
+	1    2850 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:L L2
+U 1 1 59A1D8AB
+P 3700 1500
+F 0 "L2" V 3650 1500 50  0000 C CNN
+F 1 "4.7µH" V 3775 1500 50  0000 C CNN
+F 2 "nodetech_custom:CDRH10RT_footprint" H 3700 1500 50  0000 C CNN
+F 3 "" H 3700 1500 50  0001 C CNN
+	1    3700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PiSupply-rescue:R_Small R13
+U 1 1 59A1D8B2
+P 1450 1750
+F 0 "R13" H 1480 1770 50  0000 L CNN
+F 1 "100k" H 1480 1710 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1450 1750 50  0000 C CNN
+F 3 "" H 1450 1750 50  0001 C CNN
+	1    1450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:GND #PWR017
+U 1 1 59A1D8B9
+P 1800 2050
+F 0 "#PWR017" H 1800 1800 50  0001 C CNN
+F 1 "GND" H 1800 1900 50  0000 C CNN
+F 2 "" H 1800 2050 50  0001 C CNN
+F 3 "" H 1800 2050 50  0001 C CNN
+	1    1800 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:GND #PWR018
+U 1 1 59A1D8BF
+P 2850 2250
+F 0 "#PWR018" H 2850 2000 50  0001 C CNN
+F 1 "GND" H 2850 2100 50  0000 C CNN
+F 2 "" H 2850 2250 50  0001 C CNN
+F 3 "" H 2850 2250 50  0001 C CNN
+	1    2850 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:GND #PWR019
+U 1 1 59A1D8C5
+P 3150 2000
+F 0 "#PWR019" H 3150 1750 50  0001 C CNN
+F 1 "GND" H 3150 1850 50  0000 C CNN
+F 2 "" H 3150 2000 50  0001 C CNN
+F 3 "" H 3150 2000 50  0001 C CNN
+	1    3150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PiSupply-rescue:GND #PWR020
+U 1 1 59A1D8CB
+P 3700 1100
+F 0 "#PWR020" H 3700 850 50  0001 C CNN
+F 1 "GND" H 3700 950 50  0000 C CNN
+F 2 "" H 3700 1100 50  0001 C CNN
+F 3 "" H 3700 1100 50  0001 C CNN
+	1    3700 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1400 1050 1400
+Connection ~ 1050 1400
+Wire Wire Line
+	1850 1600 1450 1600
+Wire Wire Line
+	1450 1600 1450 1650
+Wire Wire Line
+	1850 1700 1800 1700
+Wire Wire Line
+	1800 1700 1800 1950
+Wire Wire Line
+	3100 1400 3150 1400
+Wire Wire Line
+	3150 1400 3150 1500
+Wire Wire Line
+	2850 1500 3150 1500
+Wire Wire Line
+	2850 1950 2850 2000
+Wire Wire Line
+	2850 2200 2850 2250
+Wire Wire Line
+	2850 1600 3150 1600
+Wire Wire Line
+	3150 1600 3150 1750
+Wire Wire Line
+	3400 1500 3400 1450
+Connection ~ 3150 1500
+Wire Wire Line
+	3400 1050 3700 1050
+Wire Wire Line
+	3400 1050 3400 1150
+Connection ~ 3400 1500
+Wire Wire Line
+	3850 1500 4000 1500
+Wire Wire Line
+	4000 1400 4000 1500
+Wire Wire Line
+	4000 1050 4000 1200
+Connection ~ 3150 1600
+Wire Wire Line
+	4000 1600 3500 1600
+Connection ~ 4000 1500
+Wire Wire Line
+	1450 1850 1450 1950
+Wire Wire Line
+	1050 1950 1450 1950
+Connection ~ 1800 1950
+Wire Wire Line
+	1050 1750 1050 1950
+Connection ~ 1450 1950
+Wire Wire Line
+	2850 1400 2900 1400
+Wire Wire Line
+	3700 1050 3700 1100
+Connection ~ 3700 1050
+Wire Wire Line
+	3150 1950 3150 2000
+Wire Wire Line
+	1050 1400 1050 1550
+Wire Wire Line
+	2850 1700 2850 1750
+NoConn ~ 1850 1500
+Text HLabel 1000 1400 0    60   Input ~ 0
+Vin
+Text HLabel 4100 1500 2    60   Output ~ 0
+5Vout
+Wire Wire Line
+	1050 1400 1850 1400
+Wire Wire Line
+	3150 1500 3400 1500
+Wire Wire Line
+	3400 1500 3550 1500
+Wire Wire Line
+	3150 1600 3300 1600
+Wire Wire Line
+	4000 1500 4100 1500
+Wire Wire Line
+	4000 1500 4000 1600
+Wire Wire Line
+	1800 1950 1800 2050
+Wire Wire Line
+	1450 1950 1800 1950
+Wire Wire Line
+	3700 1050 4000 1050
+$EndSCHEMATC

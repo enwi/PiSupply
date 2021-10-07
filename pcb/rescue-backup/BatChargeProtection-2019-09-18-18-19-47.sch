@@ -1,0 +1,399 @@
+EESchema Schematic File Version 2
+LIBS:PiSupply-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nodetech_custom
+LIBS:PiSupply-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 1850 1200 0    60   ~ 0
+Protection circuit
+$Comp
+L DW01-P U5
+U 1 1 59A122A4
+P 3300 1800
+F 0 "U5" H 3300 1600 60  0000 C CNN
+F 1 "DW01-P" H 3300 2000 60  0000 C CNN
+F 2 "nodetech_custom:DW01-P" H 3300 2150 60  0000 C CNN
+F 3 "" H 3300 1600 60  0000 C CNN
+	1    3300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1800 3700 1800
+$Comp
+L R_Small R10
+U 1 1 59A122AC
+P 2850 2050
+F 0 "R10" H 2880 2070 50  0000 L CNN
+F 1 "1k" H 2880 2010 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2850 2050 50  0000 C CNN
+F 3 "" H 2850 2050 50  0001 C CNN
+	1    2850 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 1800 2850 1800
+Wire Wire Line
+	2850 1800 2850 1950
+Wire Wire Line
+	1250 1300 2950 1300
+Wire Wire Line
+	3700 1700 3800 1700
+Wire Wire Line
+	1250 1850 2400 1850
+Wire Wire Line
+	1850 1800 1850 2300
+Wire Wire Line
+	1850 1500 1850 1300
+Wire Wire Line
+	2650 2200 2950 2200
+Wire Wire Line
+	2850 2150 2850 2300
+$Comp
+L CEG8205A U3
+U 1 1 59A122C3
+P 2300 2250
+F 0 "U3" H 2300 2000 60  0000 C CNN
+F 1 "CEG8205A" H 2300 2500 60  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-8_4.4x3mm_Pitch0.65mm" H 2300 2550 60  0000 C CNN
+F 3 "" H 2300 2000 60  0000 C CNN
+	1    2300 2250
+	1    0    0    1   
+$EndComp
+Connection ~ 1850 1850
+Wire Wire Line
+	2900 1700 2550 1700
+Wire Wire Line
+	2550 1700 2550 1900
+Wire Wire Line
+	2850 2300 2650 2300
+Connection ~ 2850 2200
+Wire Wire Line
+	1850 2200 1950 2200
+Wire Wire Line
+	1850 2300 1950 2300
+Connection ~ 1850 2200
+Wire Wire Line
+	2550 1900 1950 1900
+Wire Wire Line
+	1950 1900 1950 2100
+Wire Wire Line
+	2650 2100 2650 2100
+Wire Wire Line
+	2650 2100 2650 1900
+Wire Wire Line
+	2650 1900 2900 1900
+Wire Wire Line
+	2150 1300 2150 1350
+Connection ~ 2150 1300
+$Comp
+L R_Small R9
+U 1 1 59A122D9
+P 2150 1450
+F 0 "R9" H 2180 1470 50  0000 L CNN
+F 1 "100" H 2180 1410 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 2150 1450 50  0000 C CNN
+F 3 "" H 2150 1450 50  0001 C CNN
+	1    2150 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3850 1500 3850 1800
+$Comp
+L C_Small C8
+U 1 1 59A122E1
+P 2150 1750
+F 0 "C8" H 2160 1820 50  0000 L CNN
+F 1 "0.1µF" H 2160 1670 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2150 1750 50  0000 C CNN
+F 3 "" H 2150 1750 50  0001 C CNN
+	1    2150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 1550 2150 1650
+Wire Wire Line
+	2150 1600 2250 1600
+Wire Wire Line
+	2250 1600 2250 1500
+Wire Wire Line
+	2250 1500 3850 1500
+Connection ~ 2150 1600
+Wire Wire Line
+	2400 1850 2400 1550
+Wire Wire Line
+	2400 1550 3800 1550
+Wire Wire Line
+	3800 1550 3800 1700
+Connection ~ 2150 1850
+NoConn ~ 2650 2400
+NoConn ~ 1950 2400
+NoConn ~ 3700 1900
+Text HLabel 2950 1300 2    60   Output ~ 0
+BAT+
+Text HLabel 2950 2200 2    60   Output ~ 0
+BAT-
+$Comp
+L TP4056 U4
+U 1 1 59A3EB2F
+P 2750 3150
+F 0 "U4" H 2750 2900 60  0000 C CNN
+F 1 "TP4056" H 2750 3400 60  0000 C CNN
+F 2 "nodetech_custom:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2750 2900 60  0000 C CNN
+F 3 "" H 2750 2900 60  0000 C CNN
+	1    2750 3150
+	1    0    0    -1  
+$EndComp
+Text HLabel 2250 3000 0    60   Output ~ 0
+BAT-
+Wire Wire Line
+	2250 3000 2300 3000
+$Comp
+L LED_ALT D7
+U 1 1 59A41AED
+P 3800 3100
+F 0 "D7" H 3800 3200 50  0000 C CNN
+F 1 "LED Green" H 3800 3000 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3800 3100 50  0000 C CNN
+F 3 "" H 3800 3100 50  0001 C CNN
+	1    3800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ALT D6
+U 1 1 59A41BA8
+P 3800 2850
+F 0 "D6" H 3800 2950 50  0000 C CNN
+F 1 "LED Blue" H 3800 2750 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 3800 2850 50  0000 C CNN
+F 3 "" H 3800 2850 50  0001 C CNN
+	1    3800 2850
+	1    0    0    -1  
+$EndComp
+Text HLabel 3350 3300 2    60   Output ~ 0
+BAT+
+Wire Wire Line
+	3200 3300 3350 3300
+Text HLabel 2200 3300 0    60   Input ~ 0
+Vchrg
+Wire Wire Line
+	2200 3300 2300 3300
+$Comp
+L C_Small C9
+U 1 1 59A4428E
+P 2250 3450
+F 0 "C9" H 2260 3520 50  0000 L CNN
+F 1 "0.1µF" H 2260 3370 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2250 3450 50  0000 C CNN
+F 3 "" H 2250 3450 50  0001 C CNN
+	1    2250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR16
+U 1 1 59A443CD
+P 2250 3600
+F 0 "#PWR16" H 2250 3350 50  0001 C CNN
+F 1 "GND" H 2250 3450 50  0000 C CNN
+F 2 "" H 2250 3600 50  0001 C CNN
+F 3 "" H 2250 3600 50  0001 C CNN
+	1    2250 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 3300 2250 3350
+Connection ~ 2250 3300
+Wire Wire Line
+	2250 3550 2250 3600
+Text HLabel 4050 3000 2    60   Input ~ 0
+Vchrg
+$Comp
+L R_Small R11
+U 1 1 59A4741B
+P 3450 2850
+F 0 "R11" H 3480 2870 50  0000 L CNN
+F 1 "1.5k" H 3480 2810 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3450 2850 50  0000 C CNN
+F 3 "" H 3450 2850 50  0001 C CNN
+	1    3450 2850
+	0    1    -1   0   
+$EndComp
+$Comp
+L R_Small R12
+U 1 1 59A4753F
+P 3450 3100
+F 0 "R12" H 3480 3120 50  0000 L CNN
+F 1 "1.5k" H 3480 3060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 3450 3100 50  0000 C CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	0    1    -1   0   
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 59A496EA
+P 3300 3450
+F 0 "C10" H 3310 3520 50  0000 L CNN
+F 1 "0.1µF" H 3310 3370 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 3300 3450 50  0000 C CNN
+F 3 "" H 3300 3450 50  0001 C CNN
+	1    3300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3300 3300 3350
+Connection ~ 3300 3300
+Text HLabel 2250 3200 0    60   Output ~ 0
+BAT-
+Wire Wire Line
+	3350 2850 3300 2850
+Wire Wire Line
+	3300 2850 3300 3100
+Wire Wire Line
+	3300 3100 3200 3100
+Wire Wire Line
+	3550 2850 3650 2850
+Wire Wire Line
+	3950 2850 4000 2850
+Wire Wire Line
+	4000 2700 4000 3100
+Wire Wire Line
+	4000 3100 3950 3100
+Wire Wire Line
+	4050 3000 4000 3000
+Connection ~ 4000 3000
+Wire Wire Line
+	3550 3100 3650 3100
+Wire Wire Line
+	3350 3100 3350 3200
+Wire Wire Line
+	3350 3200 3200 3200
+Wire Wire Line
+	3200 3000 3250 3000
+Wire Wire Line
+	3250 3000 3250 2700
+Wire Wire Line
+	3250 2700 4000 2700
+Connection ~ 4000 2850
+$Comp
+L POT RV1
+U 1 1 59A4E3A5
+P 1550 3100
+F 0 "RV1" V 1375 3100 50  0000 C CNN
+F 1 "10 k pot TC33X-2-103E" V 1450 3100 50  0000 C CNN
+F 2 "nodetech_custom:Potentiometer_Trimmer_EIA_3mm" H 1550 3100 50  0000 C CNN
+F 3 "" H 1550 3100 50  0001 C CNN
+	1    1550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 59A4E85D
+P 1900 3100
+F 0 "R8" H 1930 3120 50  0000 L CNN
+F 1 "1k2" H 1930 3060 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 1900 3100 50  0000 C CNN
+F 3 "" H 1900 3100 50  0001 C CNN
+	1    1900 3100
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	2300 3100 2000 3100
+Wire Wire Line
+	1700 3100 1800 3100
+$Comp
+L GND #PWR15
+U 1 1 59A4F313
+P 1350 3250
+F 0 "#PWR15" H 1350 3000 50  0001 C CNN
+F 1 "GND" H 1350 3100 50  0000 C CNN
+F 2 "" H 1350 3250 50  0001 C CNN
+F 3 "" H 1350 3250 50  0001 C CNN
+	1    1350 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2950 1750 2950
+Wire Wire Line
+	1750 2950 1750 3100
+Connection ~ 1750 3100
+Wire Wire Line
+	2300 3200 2250 3200
+Text HLabel 3350 3650 2    60   Output ~ 0
+BAT-
+Wire Wire Line
+	3300 3550 3300 3650
+Wire Wire Line
+	3300 3650 3350 3650
+Wire Wire Line
+	1350 3100 1400 3100
+Wire Wire Line
+	1350 3100 1350 3250
+Wire Wire Line
+	1250 1850 1250 1800
+Wire Wire Line
+	1250 1500 1250 1300
+Connection ~ 1850 1300
+$Comp
+L Battery_Cell_custom BT1
+U 1 1 59C15DBC
+P 1250 1700
+F 0 "BT1" H 1350 1800 50  0000 L CNN
+F 1 "Battery_Cell_THT" H 1350 1700 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" V 1250 1760 50  0000 C CNN
+F 3 "" V 1250 1760 50  0000 C CNN
+	1    1250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery_Cell_custom BT2
+U 1 1 59C167D9
+P 1850 1700
+F 0 "BT2" H 1950 1800 50  0000 L CNN
+F 1 "Battery_Cell_THT" H 1950 1700 50  0000 L CNN
+F 2 "nodetech_custom:conn_jst_2" V 1850 1760 50  0000 C CNN
+F 3 "" V 1850 1760 50  0000 C CNN
+	1    1850 1700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,64 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Battery_Cell
+D single battery cell
+K battery cell
+$ENDCMP
+#
+$CMP Battery_Cell_custom
+D single custom battery cell
+K battery cell custom
+$ENDCMP
+#
+$CMP CEG8205A
+D Dual N-Channel MFET
+$ENDCMP
+#
+$CMP DW01-P
+D Battery protection IC
+$ENDCMP
+#
+$CMP HLK-PM01
+D 110-240V to 5V regulator
+$ENDCMP
+#
+$CMP MCP73831T
+D Miniature Single-Cell, Fully Integrated Li-Ion, Li-Polymer Charge Management Controller
+K Charge Management Controller
+$ENDCMP
+#
+$CMP MCP73B31T
+D Miniature Single-Cell, Fully Integrated Li-Ion, Li-Polymer Charge Management Controller
+K Charge Management Controller
+$ENDCMP
+#
+$CMP MP1584
+D Step-Down Converter
+K dc down converter
+$ENDCMP
+#
+$CMP MT3608
+D High Efficiency 1.2MHz 2A Step Up Converter
+$ENDCMP
+#
+$CMP RT9167A-xxxB
+D Low-Noise, Fixed Output Voltage, 300mA/500mA LDO Regulator
+$ENDCMP
+#
+$CMP SI3442BDV
+D NMOS
+$ENDCMP
+#
+$CMP SI3443DDV
+D PMOS
+$ENDCMP
+#
+$CMP SRD-05VDC-SL-C
+D 5Volt DC Relais 10A 230VAC 10A 125VAC 10A 30VDC 10A 28VDC
+$ENDCMP
+#
+$CMP TP4056
+D 1A linear Li-Ion Battery Charger with thermal regulation
+$ENDCMP
+#
+#End Doc Library
